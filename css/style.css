@@ -11,10 +11,15 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height:1.4;
+    color: var(--text-color);
 }
 
 a{
     text-decoration: none;
+}
+
+img{
+    max-width: 100%;
 }
 
 p{
@@ -37,6 +42,12 @@ p{
 .py-1 { padding: 1.5rem 0; }
 .py-2 { padding: 2rem 0; }
 .py-3 { padding: 3rem 0; }
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
 
 .bg-dark{
     background:var(--dark-color);
@@ -92,6 +103,7 @@ p{
 #navbar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background:var(--dark-color); 
     color:white;
     position:sticky;
@@ -104,6 +116,8 @@ p{
     display: flex;
     align-items: center;
     list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #navbar ul a{
@@ -121,8 +135,9 @@ p{
 
 #showcase{
     background:var(--dark-color) url('../image/showcase.png') no-repeat center center/cover;
-   height:100vh;
+   min-height:100vh;
    color:white;
+   position: relative;
 }
 
 #showcase .showcase-content{
@@ -153,12 +168,16 @@ p{
 #what .items {
     display: flex;
     padding: 1rem;
+    gap: 1rem;
   }
   
   #what .items .item {
     flex: 1;
     text-align: center;
     padding: 1rem;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(15, 79, 148, 0.08);
   }
   
   #what .items .item i {
@@ -181,6 +200,7 @@ p{
 
 #who{
     display: flex;
+    min-height: 460px;
 }
 
 #who div{
@@ -208,22 +228,28 @@ p{
     font-size:1.7rem;
 }
 #clients .items{
-display: flex;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 #clients .items img{
     display: block;
-    margin:1.5rem;
-    width:40%;
+    margin:1rem auto;
+    width:100%;
+    max-width: 140px;
 }
 
 /*section:contacts*/
 #contact{
     display:flex;
+    flex-wrap: wrap;
 }
 
 #contact .map,#contact .contact-form{
     flex:1;
+    min-width: 320px;
 }
 
 #contact .group{
@@ -243,6 +269,7 @@ display: flex;
 #contact input{
     width:100%;
     padding: 0.5rem;
+    border: none;
 }
 
 #contact textarea{

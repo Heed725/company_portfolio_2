@@ -28,8 +28,8 @@
   }
 
   #showcase .showcase-content {
-    top: 120px;
-    padding: 0 1.25rem;
+    min-height: calc(85vh - 65px);
+    padding: 4rem 1.25rem 3rem;
   }
 
   .l-heading {
@@ -88,12 +88,13 @@
   }
 
   #contact .contact-form {
-    padding-bottom: 1rem;
+    padding: 1.5rem 1rem;
   }
 
   #contact .map {
     min-height: 260px;
     border-top: 4px solid #0b1f33;
+    border-left: none;
   }
 }
 
@@ -112,7 +113,8 @@
   }
 
   #showcase .showcase-content {
-    top: 140px;
+    min-height: calc(78vh - 65px);
+    padding: 3.5rem 1rem 2.5rem;
   }
 
   .l-heading {
@@ -154,8 +156,8 @@
 
 @media(max-height: 568px) {
   #showcase .showcase-content {
-    margin-top: -1rem;
-    top: 130px;
+    min-height: calc(100vh - 65px);
+    padding-top: 2.5rem;
   }
 
   .l-heading {

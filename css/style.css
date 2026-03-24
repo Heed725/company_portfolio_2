@@ -138,6 +138,7 @@ p{
    min-height:100vh;
    color:white;
    position: relative;
+   display: flex;
 }
 
 #showcase .showcase-content{
@@ -146,15 +147,19 @@ p{
     text-align: center;
     justify-content: center;
     align-items: center;
-    height:100%;
-    padding: 0 2rem;
+    width:100%;
+    min-height: calc(100vh - 65px);
+    padding: 5rem 2rem 4rem;
     /*Overlay*/
     background-color: rgba(0,0,0,0.5);
-    position: absolute;
-    top:65px;
-    left: 0;
-    right: 0;
-    bottom: 0;
+}
+
+#showcase .btn{
+    margin-top: 1rem;
+}
+
+#what{
+    scroll-margin-top: 90px;
 }
 
 /*Section*/
@@ -245,11 +250,17 @@ p{
 #contact{
     display:flex;
     flex-wrap: wrap;
+    align-items: stretch;
+    background: #fff;
 }
 
 #contact .map,#contact .contact-form{
     flex:1;
     min-width: 320px;
+}
+
+#contact .contact-form{
+    padding: 2.5rem 2rem;
 }
 
 #contact .group{
@@ -268,18 +279,33 @@ p{
 
 #contact input{
     width:100%;
-    padding: 0.5rem;
+    padding: 0.85rem 1rem;
     border: none;
+    border-radius: 10px;
 }
 
 #contact textarea{
     width:100%;
     min-height: 120px;
-    padding: 0.75rem;
+    padding: 0.85rem 1rem;
     border: none;
+    border-radius: 10px;
+    resize: vertical;
+}
+
+#contact .map{
+    min-height: 480px;
+    background: #dbeafe;
+    border-left: 6px solid var(--primary-light);
 }
 
 #main-footer{
     margin-top:0;
-    padding:0.1rem;
+    padding:1rem 0;
+    text-align: center;
+}
+
+#main-footer p{
+    margin: 0;
+    text-align: center;
 }
